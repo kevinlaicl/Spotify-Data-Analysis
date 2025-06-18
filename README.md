@@ -37,23 +37,23 @@ ALTER TABLE IF EXISTS public.spotify
     OWNER to postgres;
 ```
 ## Understand Popularity Patterns
-1. Identify high-performing content to prioritise promotion on vital content
-2. Map artist-album relationships to analyse artist productivity and release frequency
-3. Engagement on licensed content to see whether licensed tracks getting strong user engagement for validating licensed investment
-4. Format-based performance to support decisions on whether to push single releases
-5. Artist Output Volume to highlight highly active artists that Spotify may want to support or spotlight
+- Identify high-performing content to prioritise promotion on vital content
+- Map artist-album relationships to analyse artist productivity and release frequency
+- Engagement on licensed content to see whether licensed tracks getting strong user engagement for validating licensed investment
+- Format-based performance to support decisions on whether to push single releases
+- Artist Output Volume to highlight highly active artists that Spotify may want to support or spotlight
 
 ## Analyse Audio Features Trends
 **- Understand musical feature values by album**  
-Used for mood-based playlist targeting
+Used for mood-based playlist targeting  
 **- Highlight High Energy Tracks**  
-Used for gym, party, mood-based playlist targeting
+Used for gym, party, mood-based playlist targeting  
 **- Content performance by format**  
-Tested whether official content performs better
+Tested whether official content performs better  
 **- Viewers by albums**  
-Useful for album-focused campaign planning
+Useful for album-focused campaign planning  
 **- Platform performance comaprison**  
-Could reveal audio-only streaming behaviour
+Could reveal audio-only streaming behaviour  
 
 ## Artist-Level Insights
 **- Identify Top Visual Hits per Artist**  
