@@ -1,7 +1,7 @@
 # Spotify-Data-Analysis
 ## Project Overview
 This project explored the relationship between musical characteristics and streaming tracks using cleaned_dataset_spotify combining Spotify audio features and performance metrics on YouTube/Spotify. By leverageing SQL for data wrangling and performance analysis, the project simulated real-world data workflows used by music playforms to optimise content strategy, recommendation system, and artist promotion.  
-![spotify project](https://github.com/user-attachments/assets/20fba23a-0042-4c42-bd73-36c5564676a8)
+![spotify project](https://github.com/user-attachments/assets/20fba23a-0042-4c42-bd73-36c5564676a8) = 250x250
 
 ## Dataset Overview
 This dataset contains track data combining with Spotify audio features with performace metrics from Spotify and YouTube.  
