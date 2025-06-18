@@ -44,15 +44,15 @@ ALTER TABLE IF EXISTS public.spotify
 5. Artist Output Volume to highlight highly active artists that Spotify may want to support or spotlight
 
 ## Analyse Audio Features Trends
-** Understand musical feature values by album
+**- Understand musical feature values by album**  
 Used for mood-based playlist targeting
-** Highlight High Energy Tracks
+**- Highlight High Energy Tracks**  
 Used for gym, party, mood-based playlist targeting
-** Content performance by format
+**- Content performance by format**  
 Tested whether official content performs better
-** Viewers by albums
+**- Viewers by albums**  
 Useful for album-focused campaign planning
-** Platform performance comaprison
+**- Platform performance comaprison**  
 Could reveal audio-only streaming behaviour
 
 ## Artist-Level Insights
