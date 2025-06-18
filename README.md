@@ -1,7 +1,15 @@
 # Spotify-Data-Analysis
 ## Project Overview
-
+This project explored the relationship between musical characteristics and streaming tracks using cleaned_dataset_spotify combining Spotify audio features and performance metrics on YouTube/Spotify. By leverageing SQL for data wrangling and performance analysis, the project simulated real-world data workflows used by music playforms to optimise content strategy, recommendation system, and artist promotion.  
 ## Dataset Overview
+This dataset contains track data combining with Spotify audio features with performace metrics from Spotify and YouTube.  
+It includes 24 columns:
+- Artist, Track, Album, Album_type
+- Audio Features: Danceability, Energy, Loudness, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Duration_minutes
+- Performance Metrics: Stream, Views, Likes, Comments
+- Binary variables: Licensed, Official_Video
+- Dominant Platform: most_playedon (Spofity/Youtube)
+- Custom Field: EnergyLivenss, composite index conbining intensity and live feel
 ```sql
 CREATE TABLE IF NOT EXISTS public.spotify
 (
@@ -30,11 +38,6 @@ CREATE TABLE IF NOT EXISTS public.spotify
     energyliveness double precision,
     most_playedon character varying(50) COLLATE pg_catalog."default"
 )
-
-TABLESPACE pg_default;
-
-ALTER TABLE IF EXISTS public.spotify
-    OWNER to postgres;
 ```
 ## Understand Popularity Patterns
 - Identify high-performing content to prioritise promotion on vital content
