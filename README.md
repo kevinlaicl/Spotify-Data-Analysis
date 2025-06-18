@@ -56,7 +56,7 @@ Useful for album-focused campaign planning
 Could reveal audio-only streaming behaviour
 
 ## Artist-Level Insights
-**Identify Top Visual Hits per Artist**
+**Identify Top Visual Hits per Artist**  
 Find the top 3 most-viewed track for each artist so that we could show the popular songs on artist pages
 ```sql
 WITH ranking_artist
@@ -73,7 +73,7 @@ ORDER BY 1, 3 DESC
 SELECT * FROM ranking_artist
 WHERE rank <= 3
 ```
-**Identify Live-Feeling Tracks**
+**Identify Live-Feeling Tracks**  
 Find tracks where the liveness score is above the average so that we could create live-vibe playlists or promote concert-related content
 ```sql
 SELECT
@@ -85,7 +85,7 @@ WHERE liveness > (SELECT AVG(liveness) FROM spotify)
 ORDER BY 3 DESC
 ```
 
-**Analyse Audio Energy Diversity**
+**Analyse Audio Energy Diversity**  
 The variety in energy each album has so that we could distinguish album with emotional range vs. consistent tone
 ```sql
 WITH energy_table
