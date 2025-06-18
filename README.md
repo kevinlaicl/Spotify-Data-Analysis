@@ -44,19 +44,14 @@ ALTER TABLE IF EXISTS public.spotify
 - Artist Output Volume to highlight highly active artists that Spotify may want to support or spotlight
 
 ## Analyse Audio Features Trends
-**- Understand musical feature values by album**  
-Used for mood-based playlist targeting  
-**- Highlight High Energy Tracks**  
-Used for gym, party, mood-based playlist targeting  
-**- Content performance by format**  
-Tested whether official content performs better  
-**- Viewers by albums**  
-Useful for album-focused campaign planning  
-**- Platform performance comaprison**  
-Could reveal audio-only streaming behaviour  
+- Understand musical feature values by album for mood-based playlist targeting  
+- Highlight high energy tracks for gym, party, mood-based playlist targeting  
+- Content performance by format for Testing whether official content performs better  
+- Viewers by albums for album-focused campaign planning  
+- Platform performance comaprison could reveal audio-only streaming behaviour  
 
 ## Artist-Level Insights
-**- Identify Top Visual Hits per Artist**  
+**1. Identify Top Visual Hits per Artist**  
 Find the top 3 most-viewed track for each artist so that we could show the popular songs on artist pages
 ```sql
 WITH ranking_artist
@@ -73,7 +68,7 @@ ORDER BY 1, 3 DESC
 SELECT * FROM ranking_artist
 WHERE rank <= 3
 ```
-**- Identify Live-Feeling Tracks**  
+**2. Identify Live-Feeling Tracks**  
 Find tracks where the liveness score is above the average so that we could create live-vibe playlists or promote concert-related content
 ```sql
 SELECT
@@ -85,7 +80,7 @@ WHERE liveness > (SELECT AVG(liveness) FROM spotify)
 ORDER BY 3 DESC
 ```
 
-**- Analyse Audio Energy Diversity**  
+**3. Analyse Audio Energy Diversity**  
 The variety in energy each album has so that we could distinguish album with emotional range vs. consistent tone
 ```sql
 WITH energy_table
